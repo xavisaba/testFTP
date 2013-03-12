@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 _Store
+=======
+# Xcode
+.DS_Store
+>>>>>>> 47705c31055612e4efc5d1644a56ea87f453f557
 build/
 *.pbxuser
 !default.pbxuser
@@ -15,4 +20,7 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+<<<<<<< HEAD
 
+=======
+>>>>>>> 47705c31055612e4efc5d1644a56ea87f453f557
