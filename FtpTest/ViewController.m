@@ -22,9 +22,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.ftpManager = [[FTPManager alloc]init];
     self.dirDest=@"directorio";
-    self.url=@"213.27.244.107";
-    self.user=@"procliprodt";
-    self.pass=@"RzjQGw94";
+    self.url=@"";
+    self.user=@"";
+    self.pass=@"";
     self.server = [FMServer serverWithDestination:self.url username:self.user password:self.pass];
     self.tvList.dataSource = self;
     self.tvList.delegate = self;
