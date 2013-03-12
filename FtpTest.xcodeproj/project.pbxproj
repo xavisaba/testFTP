@@ -18,6 +18,9 @@
 		84E14CB716EDEDBE00A00F41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E14CB616EDEDBE00A00F41 /* Default-568h@2x.png */; };
 		84E14CBA16EDEDBE00A00F41 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E14CB816EDEDBE00A00F41 /* MainStoryboard.storyboard */; };
 		84E14CBD16EDEDBE00A00F41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E14CBC16EDEDBE00A00F41 /* ViewController.m */; };
+		84E14CC416EDEDE400A00F41 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E14CC316EDEDE400A00F41 /* CFNetwork.framework */; };
+		84E14CC716EDEE1500A00F41 /* FTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E14CC616EDEE1500A00F41 /* FTPManager.m */; };
+		84E14CC916EE392E00A00F41 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E14CC816EE392D00A00F41 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		84E14CB916EDEDBE00A00F41 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		84E14CBB16EDEDBE00A00F41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		84E14CBC16EDEDBE00A00F41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84E14CC316EDEDE400A00F41 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		84E14CC516EDEE1500A00F41 /* FTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPManager.h; sourceTree = "<group>"; };
+		84E14CC616EDEE1500A00F41 /* FTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPManager.m; sourceTree = "<group>"; };
+		84E14CC816EE392D00A00F41 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E14CC916EE392E00A00F41 /* AssetsLibrary.framework in Frameworks */,
+				84E14CC416EDEDE400A00F41 /* CFNetwork.framework in Frameworks */,
 				84E14CA116EDEDBD00A00F41 /* UIKit.framework in Frameworks */,
 				84E14CA316EDEDBD00A00F41 /* Foundation.framework in Frameworks */,
 				84E14CA516EDEDBD00A00F41 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +65,8 @@
 		84E14C9416EDEDBD00A00F41 = {
 			isa = PBXGroup;
 			children = (
+				84E14CC816EE392D00A00F41 /* AssetsLibrary.framework */,
+				84E14CC316EDEDE400A00F41 /* CFNetwork.framework */,
 				84E14CA616EDEDBD00A00F41 /* FtpTest */,
 				84E14C9F16EDEDBD00A00F41 /* Frameworks */,
 				84E14C9E16EDEDBD00A00F41 /* Products */,
@@ -83,6 +94,8 @@
 		84E14CA616EDEDBD00A00F41 /* FtpTest */ = {
 			isa = PBXGroup;
 			children = (
+				84E14CC516EDEE1500A00F41 /* FTPManager.h */,
+				84E14CC616EDEE1500A00F41 /* FTPManager.m */,
 				84E14CAF16EDEDBD00A00F41 /* AppDelegate.h */,
 				84E14CB016EDEDBD00A00F41 /* AppDelegate.m */,
 				84E14CB816EDEDBE00A00F41 /* MainStoryboard.storyboard */,
@@ -176,6 +189,7 @@
 				84E14CAD16EDEDBD00A00F41 /* main.m in Sources */,
 				84E14CB116EDEDBD00A00F41 /* AppDelegate.m in Sources */,
 				84E14CBD16EDEDBE00A00F41 /* ViewController.m in Sources */,
+				84E14CC716EDEE1500A00F41 /* FTPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +276,12 @@
 		84E14CC116EDEDBE00A00F41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xavier Sanchez (USEDE6SPFT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FtpTest/FtpTest-Prefix.pch";
 				INFOPLIST_FILE = "FtpTest/FtpTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D8E17820-0BA8-4B40-BC12-F44199D02097";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -273,10 +289,12 @@
 		84E14CC216EDEDBE00A00F41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xavier Sanchez (USEDE6SPFT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FtpTest/FtpTest-Prefix.pch";
 				INFOPLIST_FILE = "FtpTest/FtpTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D8E17820-0BA8-4B40-BC12-F44199D02097";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
